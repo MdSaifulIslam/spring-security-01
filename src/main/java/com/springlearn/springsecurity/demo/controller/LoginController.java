@@ -11,5 +11,21 @@ public class LoginController {
 
 		return "plain-login";
 	}
+	@GetMapping("/leaders")
+	private String showLeadersPage() {
+		
+		return "leaders";
+	}
+	
+	@GetMapping("/admins")
+	private String showAdminsPage() {
+		
+		return "admins";
+	}
+	@GetMapping("/access-denied")
+	private String showAccessDeniedPage() {
+		
+		return "access-denied";
+	}
 
 }
