@@ -14,7 +14,13 @@
 		method="POST">
 
 		<c:if test="${param.error != null }">
-			<i style="color: white; background:red; padding: 5px"> Sorry! You entered wrong username/password </i>
+			<i style="color: white; background: red; padding: 5px"> Sorry!
+				You entered wrong username/password </i>
+		</c:if>
+
+		<c:if test="${param.logout != null }">
+			<i style="color: white; background: green; padding: 5px"> You are
+				successfully logout </i>
 		</c:if>
 
 		<p>
@@ -25,7 +31,6 @@
 		</p>
 
 		<input type="submit" value="Login" />
-
 
 	</form:form>
 
